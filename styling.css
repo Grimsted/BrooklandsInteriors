@@ -364,6 +364,9 @@ html,body{height:100%;}
     .nudge-down {
         text-align: center;
     }
+    
+    .contact-bg {
+        background-attatchment: scroll;
 }
 
 
