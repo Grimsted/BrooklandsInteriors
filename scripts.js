@@ -11,17 +11,12 @@ $(window).scroll(function() {
     }
 });
 
-//Remove Opacity 
-//var str = "bar";
-//$('<style>div.carousel-item::after{opacity:0}</style>').delay(3000).appendTo('head');
-
+//Remove opacity
 setTimeout(
   function() 
   {
     $('<style>div.carousel-item::after{opacity:0}</style>').appendTo('head');
   }, 8800);
-
-// $(".carousel-item::after").animate({opacity: '0'}, 3000);
 
 //Makes Carousel Images backgrounds (makes it full screen)
 
@@ -50,18 +45,11 @@ $(window).on('resize', function (){
 
 $item.eq(0).addClass('active');
 
-//Controls slide speed
-
-//$(document).ready(function() {
- // jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 4000  // 2 seconds
-//});
-
 //Smooth Scroll
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
-
       document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
       });
