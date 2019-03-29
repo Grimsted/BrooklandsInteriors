@@ -55,3 +55,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
+
+//Lazy Load
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
